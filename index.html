@@ -2,50 +2,102 @@
 <html lang="fa">
 <head>
     <meta charset="UTF-8">
-    <title>آشنایی با کتابخانه ها</title>
+    <title>آشنایی با کتابخانه‌ها</title>
     <style>
         body {
             direction: rtl;
             font-family: "Vazirmatn", sans-serif;
-            background: linear-gradient(to bottom right, #f9f9f9, #e0f7fa);
+            background: linear-gradient(135deg, #e0f7fa, #80deea);
             margin: 0;
             padding: 0;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            text-align: center;
-            background: linear-gradient(135deg, #e0f7fa, #80deea);
-            background-attachment: fixed;
         }
 
         #welcome-message {
-            font-size: 2.5rem;
-            color: #333;
+            font-size: 2.8rem;
+            color: #004d40;
+            margin-top: 4rem;
             margin-bottom: 2rem;
-            text-shadow: 1px 1px 2px #ccc;
+            text-shadow: 1px 1px 3px #ccc;
+            text-align: center;
         }
 
         #next-button {
-            background-color: #009688;
+            background-color: #00bfa5;
             color: white;
             text-decoration: none;
-            padding: 12px 30px;
-            border-radius: 8px;
-            font-size: 1.1rem;
+            padding: 14px 36px;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            font-weight: bold;
             transition: background-color 0.3s ease, transform 0.2s ease;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 3rem;
         }
 
         #next-button:hover {
-            background-color: #00796b;
-            transform: translateY(-2px);
+            background-color: #00897b;
+            transform: scale(1.05);
+        }
+
+        #contact {
+            background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            padding: 2rem 3rem;
+            max-width: 420px;
+            margin: 3rem auto 4rem;
+            text-align: center;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        #contact h2 {
+            color: #00695c;
+            margin-bottom: 1.5rem;
+        }
+
+        #contact a {
+            color: #00796b;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        .contact-item img {
+            width: 20px;
+            height: 20px;
+            margin-left: 8px;
         }
     </style>
 </head>
 <body>
     <h1 id="welcome-message">به سایت آشنایی با ماژول‌ها خوش آمدید</h1>
     <a id="next-button" href="./1.html">برو به صفحه بعد</a>
+
+    <div id="contact">
+        <h2>ارتباط با ما</h2>
+        <div class="contact-item">
+            <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="ایمیل">
+            <a href="mailto:m.p.abdi@gmail.com">m.p.abdi@gmail.com</a>
+        </div>
+        <div class="contact-item">
+    <a href="https://ble.ir/abdi_pv" target="_blank">@abdi_pv</a>
+</div>
+    </div>
 </body>
 </html>
