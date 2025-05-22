@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>راهنمای ماژول helliemod</title>
+  <style>
+    body {
+      direction: rtl;
+      font-family: "Vazirmatn", sans-serif;
+      background: linear-gradient(to bottom right, #e3f2fd, #bbdefb);
+      margin: 0;
+      padding: 2rem;
+      color: #0d47a1;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .section {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin: 1rem auto;
+      max-width: 800px;
+    }
+
+    code {
+      background-color: #f5f5f5;
+      padding: 0.2rem 0.4rem;
+      border-radius: 5px;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <h1>راهنمای استفاده از ماژول <code>helliemod</code></h1>
+
+  <div class="section">
+    <h2>نصب ماژول</h2>
+    <p>برای نصب ماژول، فقط کافیست دستور زیر را در ترمینال اجرا کنید:</p>
+    <code>pip install helliemod</code>
+  </div>
+
+  <div class="section">
+    <h2>وارد کردن در برنامه</h2>
+    <p>پس از نصب، برای استفاده از توابع ماژول، آن را به شکل زیر وارد کنید:</p>
+    <code>import helliemod</code>
+  </div>
+
+  <div class="section">
+    <h2>توابع موجود در ماژول</h2>
+    <ul>
+      <li><code>fact(n)</code>: محاسبه فاکتوریل عدد</li>
+      <li><code>compare(a, b)</code>: بازگرداندن عدد بزرگ‌تر</li>
+      <li><code>digits(n)</code>: شمارش تعداد ارقام عدد</li>
+      <li><code>sum_digits(n)</code>: مجموع ارقام عدد</li>
+      <li><code>reverse(n)</code>: مقلوب عدد</li>
+      <li><code>check_prime(n)</code>: بررسی اول بودن عدد</li>
+      <li><code>lcm(a, b)</code>: محاسبه کوچک‌ترین مضرب مشترک</li>
+      <li><code>gcd(a, b)</code>: محاسبه بزرگ‌ترین مقسوم‌علیه مشترک</li>
+      <li><code>abso_value(n)</code>: قدر مطلق عدد</li>
+      <li><code>fib_seq(n)</code>: تولید دنباله فیبوناچی با طول مشخص</li>
+      <li><code>sum_atob(a, b, step=1)</code>: مجموع اعداد بین دو عدد با گام دلخواه</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>راهنما به صورت گرافیکی</h2>
+    <p>برای مشاهده لیست توابع به صورت پنجره گرافیکی، می‌توانید از تابع <code>helliemod.help()</code> استفاده کنید.</p>
+  </div>
+</body>
+</html>
